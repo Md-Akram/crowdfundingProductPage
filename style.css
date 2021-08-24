@@ -63,13 +63,14 @@ header > ul > li > a:focus {
   cursor: pointer;
 }
 .card {
-  width: 70%;
+  width: 75%;
   max-width: 650px;
-  margin: 15px auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 30px 20px;
   background-color: white;
   text-align: center;
   border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .main-card {
@@ -89,28 +90,144 @@ header > ul > li > a:focus {
 }
 .btns {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-items: center;
   justify-content: space-between;
 }
 .btns > a {
   text-decoration: none;
 }
-.btns > .btn-1 {
+.btn-1 {
   color: white;
   background-color: var(--Moderatecyan);
-  padding: 2vw 1.5vw;
+  padding: 1rem 0.7rem;
   border-radius: 30px;
 }
-.btns > .btn-2 {
+/* .btns > .btn-2 {
   padding: 2vw 1.5vw;
-}
-.btns > .btn-1:hover,
-.btns > .btn-1:focus {
+} */
+.btn-1:hover,
+.btn-1:focus {
   background-color: var(--Darkcyan);
 }
 .span-2 {
   display: none;
+}
+
+.num-card > h1 {
+  margin: 15px;
+}
+.num-card > p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: var(--Darkgray);
+}
+.num-card > hr {
+  width: 100px;
+  margin: 0 auto;
+}
+.progress-bar {
+  width: 90%;
+  height: 14px;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  margin: 5px auto;
+}
+.progress {
+  width: 89.914%;
+  height: 100%;
+  background-color: var(--Moderatecyan);
+  border-radius: 30px;
+}
+.about-card,
+.modal {
+  text-align: left;
+}
+.about-card > h3,
+.modal > h3 {
+  margin: 15px 0;
+}
+.about-card > p,
+.modal > p {
+  margin: 20px 0;
+  color: var(--Darkgray);
+  line-height: 24px;
+}
+.product-card {
+  width: 90%;
+  margin: 15px auto;
+  border: 1px solid var(--Darkgray);
+  border-radius: 10px;
+  padding: 15px;
+}
+.product-card > h4 {
+  margin: 5px 0;
+}
+.product-card > p {
+  margin-bottom: 20px;
+  color: var(--Moderatecyan);
+}
+.product-card > small {
+  display: block;
+  margin: 15px 0;
+  font-size: 15px;
+  color: var(--Darkgray);
+  line-height: 25px;
+}
+.product-card > h1 {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.product-card > h1 > span {
+  color: var(--Darkgray);
+  font-weight: 400;
+  font-size: 16px;
+  margin: 7px;
+}
+.product-card > a {
+  display: inline-block;
+  margin: 10px 0;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+.disabled * {
+  color: var(--Darkgray);
+}
+.disabled > a {
+  color: white;
+  background-color: #cbcbcb;
+}
+.disabled > a:hover,
+.disabled > a:focus {
+  background-color: #cbcbcb;
+}
+
+.modal-input > .input-row {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    'input label'
+    'input p';
+  align-items: center;
+  justify-content: start;
+  margin: 10px 0;
+}
+.modal-input > .input-row > input {
+  grid-area: input;
+  border: 0px;
+  width: 2rem;
+  height: 2em;
+}
+.input-row > label {
+  grid-area: label;
+}
+.input-row > p {
+  grid-area: p;
+  color: var(--Moderatecyan);
+}
+.dark-grey {
+  color: var(--Darkgray) !important;
 }
 
 .attribution {
