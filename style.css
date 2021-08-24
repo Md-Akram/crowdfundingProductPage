@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+:root {
+  --Moderatecyan: hsl(176, 50%, 47%);
+  --Darkcyan: hsl(176, 72%, 28%);
+  --Black: hsl(0, 0%, 0%);
+  --Darkgray: hsl(0, 0%, 48%);
+}
+
+* {
+  font-family: 'Commissioner', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+}
+header {
+  background-image: url(images/image-hero-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px;
+  position: relative;
+}
+header > ul {
+  list-style-type: none;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  width: 80%;
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 1;
+  visibility: hidden;
+  box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.5);
+}
+/* header > ul > li {
+   text-align: center; 
+   margin: 15px; 
+} */
+header > ul > li > a {
+  text-decoration: none;
+  color: var(--Black);
+  padding: 25px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  display: block;
+}
+header > ul > li > a:hover,
+header > ul > li > a:focus {
+  color: var(--Darkgray);
+}
+.menu-ham {
+  cursor: pointer;
+}
+.card {
+  width: 70%;
+  max-width: 650px;
+  margin: 15px auto;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.main-card {
+  margin-top: -50px;
+  position: relative;
+}
+.main-card > img {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.main-card > h2,
+.main-card > p {
+  margin: 18px 0;
+  line-height: 1.5rem;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.btns > a {
+  text-decoration: none;
+}
+.btns > .btn-1 {
+  color: white;
+  background-color: var(--Moderatecyan);
+  padding: 2vw 1.5vw;
+  border-radius: 30px;
+}
+.btns > .btn-2 {
+  padding: 2vw 1.5vw;
+}
+.btns > .btn-1:hover,
+.btns > .btn-1:focus {
+  background-color: var(--Darkcyan);
+}
+.span-2 {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
