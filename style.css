@@ -63,7 +63,7 @@ header > ul > li > a:focus {
   cursor: pointer;
 }
 .card {
-  width: 75%;
+  width: 90%;
   max-width: 650px;
   margin: 20px auto;
   padding: 30px 20px;
@@ -102,6 +102,7 @@ header > ul > li > a:focus {
   background-color: var(--Moderatecyan);
   padding: 1rem 0.7rem;
   border-radius: 30px;
+  text-decoration: none;
 }
 /* .btns > .btn-2 {
   padding: 2vw 1.5vw;
@@ -154,7 +155,7 @@ header > ul > li > a:focus {
   line-height: 24px;
 }
 .product-card {
-  width: 90%;
+  width: 95%;
   margin: 15px auto;
   border: 1px solid var(--Darkgray);
   border-radius: 10px;
@@ -188,7 +189,7 @@ header > ul > li > a:focus {
 .product-card > a {
   display: inline-block;
   margin: 10px 0;
-  text-decoration: none;
+
   padding: 15px 30px;
 }
 .disabled * {
@@ -203,6 +204,24 @@ header > ul > li > a:focus {
   background-color: #cbcbcb;
 }
 
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 100000px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-header > img {
+  cursor: pointer;
+}
 .modal-input > .input-row {
   display: grid;
   grid-gap: 10px;
@@ -218,7 +237,9 @@ header > ul > li > a:focus {
   border: 0px;
   width: 2rem;
   height: 2em;
+  color: var(--Moderatecyan);
 }
+
 .input-row > label {
   grid-area: label;
 }
@@ -228,6 +249,53 @@ header > ul > li > a:focus {
 }
 .dark-grey {
   color: var(--Darkgray) !important;
+}
+
+.pledge-input {
+  display: none;
+  width: 100%;
+  margin: 15px auto;
+}
+.pledge-input > small {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+.pledge-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+.pledge-form > input {
+  padding: 10px;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid var(--Darkgray);
+}
+.pledge-form > input::placeholder {
+  font-weight: bold;
+}
+
+.selected .pledge-input {
+  display: block;
+}
+.selected {
+  border: 2px solid var(--Moderatecyan);
+}
+
+.success-modal * {
+  margin: 15px 0;
+}
+.success-modal > small {
+  display: block;
+  font-size: 16px;
+}
+.success-modal > a {
+  display: block;
+  width: 100px;
+  margin: 10px auto;
 }
 
 .attribution {
