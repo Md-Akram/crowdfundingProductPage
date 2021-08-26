@@ -264,11 +264,13 @@ header > ul > li > a:focus {
 }
 .pledge-form {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin: 10px 0;
 }
 .pledge-form > input {
+  margin: 10px 0;
   padding: 10px;
   border-radius: 30px;
   outline: none;
@@ -285,6 +287,15 @@ header > ul > li > a:focus {
   border: 2px solid var(--Moderatecyan);
 }
 
+.success-modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 100000px rgba(0, 0, 0, 0.5);
+}
 .success-modal * {
   margin: 15px 0;
 }
@@ -304,4 +315,56 @@ header > ul > li > a:focus {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 769px) {
+  .nav {
+    position: static;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    list-style-type: none;
+    background-color: transparent;
+    box-shadow: none;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 0;
+  }
+  .nav > li {
+    margin: 0;
+    padding: 0;
+  }
+  .nav > li > a {
+    color: white;
+    margin: 0;
+    padding: 0 15px;
+  }
+  .nav > hr {
+    display: none;
+  }
+  .menu-ham {
+    display: none;
+  }
+
+  .span-2 {
+    display: block;
+    color: var(--Darkgray);
+    padding: 1rem;
+  }
+  .btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    border-radius: 30px;
+  }
+
+  .pledge-form {
+    flex-direction: row;
+  }
 }
