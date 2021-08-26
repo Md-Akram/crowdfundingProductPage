@@ -18,7 +18,7 @@ This is a solution to the [Crowdfunding product page challenge on Frontend Mento
 
 ### Screenshot
 
-![image](https://{prnt.sc/1qj2s08})
+<img src="images\screenshot.png" >
 
 ### Links
 
